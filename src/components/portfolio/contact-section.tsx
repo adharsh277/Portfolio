@@ -12,7 +12,7 @@ export function ContactSection() {
   return (
     <motion.section
       id="let-s-connect"
-      className="panel-neu p-6 mb-16"
+      className="p-6 mb-16"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
