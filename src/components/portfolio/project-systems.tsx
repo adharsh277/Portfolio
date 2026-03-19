@@ -8,7 +8,14 @@ import { projects } from "@/data/portfolio-data";
 
 export function ProjectSystems() {
   return (
-    <section className="space-y-5" id="systems">
+    <motion.section
+      className="space-y-5 mb-16"
+      id="systems"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+    >
       <p className="text-xs uppercase tracking-[0.3em] text-[color:var(--text-dim)]">Systems</p>
       <h2 className="text-3xl font-semibold text-[color:var(--text-main)] sm:text-4xl">Selected Infrastructure Projects</h2>
 
@@ -112,7 +119,9 @@ export function ProjectSystems() {
         </a>
       </div>
 
-      <TechStackInventory />
-    </section>
+      <div className="pb-16">
+        <TechStackInventory />
+      </div>
+    </motion.section>
   );
 }

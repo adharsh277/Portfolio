@@ -25,7 +25,14 @@ export function InfrastructureMap() {
   const activeNode = useMemo(() => nodes.find((node) => node.id === activeId) ?? nodes[0], [activeId]);
 
   return (
-    <section id="selected-work" className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
+    <motion.section
+      id="selected-work"
+      className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr] mb-16"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+    >
       <Card className="panel-glass p-5">
         <p className="text-xs uppercase tracking-[0.24em] text-[color:var(--text-dim)]">AI Infrastructure Map</p>
         <div className="relative mt-5 h-[360px] overflow-hidden rounded-xl border border-white/10">
@@ -69,6 +76,6 @@ export function InfrastructureMap() {
           ))}
         </div>
       </motion.aside>
-    </section>
+    </motion.section>
   );
 }

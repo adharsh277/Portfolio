@@ -5,7 +5,14 @@ import { experiences } from "@/data/portfolio-data";
 
 export function ExperienceTimeline() {
   return (
-    <section id="experience" className="panel-glass p-6 sm:p-8">
+    <motion.section
+      id="experience"
+      className="panel-glass p-6 sm:p-8 mb-16"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+    >
       <p className="text-xs uppercase tracking-[0.3em] text-[color:var(--text-dim)]">Experience Timeline</p>
       <div className="relative mt-6 space-y-6 before:absolute before:left-4 before:top-0 before:h-full before:w-px before:bg-[linear-gradient(var(--violet),transparent)] sm:before:left-1/2">
         {experiences.map((exp, index) => (
@@ -24,6 +31,6 @@ export function ExperienceTimeline() {
           </motion.article>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

@@ -36,7 +36,13 @@ export function DevopsSimulationPanel() {
   );
 
   return (
-    <section className="panel-glass p-6">
+    <motion.section
+      className="panel-glass p-6 mb-16"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+    >
       <div className="grid gap-6 xl:grid-cols-[0.8fr_1.2fr]">
         <div>
           <p className="text-xs uppercase tracking-[0.22em] text-[color:var(--text-dim)]">Live DevOps Simulation</p>
@@ -80,6 +86,6 @@ export function DevopsSimulationPanel() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

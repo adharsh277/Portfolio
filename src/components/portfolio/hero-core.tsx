@@ -6,7 +6,14 @@ import { NeuralCoreCanvas } from "@/components/portfolio/neural-core-canvas";
 
 export function HeroCore() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden" id="hero-core">
+    <motion.section
+      className="relative flex min-h-screen items-center justify-center overflow-hidden mb-16"
+      id="hero-core"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+    >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(244,54,149,0.18),transparent_45%),radial-gradient(circle_at_80%_30%,rgba(184,66,250,0.18),transparent_45%),linear-gradient(140deg,#060509,#101018_55%,#060509)]" />
       <div className="absolute inset-0 data-grid opacity-40" />
       <NeuralCoreCanvas />
@@ -29,6 +36,6 @@ export function HeroCore() {
           <p className="mt-4 text-[10px] uppercase tracking-[0.24em] text-[color:var(--text-dim)] sm:text-xs">Signal matrix :: quantum relay :: node lattice</p>
         </div>
       </motion.div>
-    </section>
+    </motion.section>
   );
 }

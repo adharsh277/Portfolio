@@ -3,6 +3,7 @@
 import { FormEvent, useMemo, useState } from "react";
 import { identity, projects } from "@/data/portfolio-data";
 import { playUiClick } from "@/lib/sound";
+import { motion } from "framer-motion";
 
 const commandOutput: Record<string, string[]> = {
   whoami: [
@@ -44,7 +45,13 @@ export function TerminalInterface() {
   };
 
   return (
-    <section className="panel-neu p-6">
+    <motion.section
+      className="panel-neu p-6 mb-16"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+    >
       <p className="text-xs uppercase tracking-[0.3em] text-[color:var(--text-dim)]">Interactive Terminal</p>
       <div className="mt-4 h-72 overflow-y-auto rounded-xl border border-white/15 bg-black/50 p-4 text-xs leading-6 text-[color:var(--text-main)]">
         {history.map((line, idx) => (
@@ -67,6 +74,6 @@ export function TerminalInterface() {
         </div>
       </form>
       <p className="mt-2 text-[10px] uppercase tracking-[0.24em] text-[color:var(--text-dim)]">{promptText}</p>
-    </section>
+    </motion.section>
   );
 }

@@ -13,7 +13,13 @@ const layers = [
 
 export function InfiniteScrollStream() {
   return (
-    <section className="relative overflow-hidden rounded-3xl border border-white/10 bg-black/25 p-6 sm:p-10">
+    <motion.section
+      className="relative overflow-hidden rounded-3xl border border-white/10 bg-black/25 p-6 sm:p-10 mb-16"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
       <div className="pointer-events-none absolute inset-0 stars-layer" />
       <p className="relative z-10 text-xs uppercase tracking-[0.3em] text-[color:var(--text-dim)]">Infinite Data Stream</p>
       <div className="relative z-10 mt-6 space-y-4">
@@ -35,6 +41,6 @@ export function InfiniteScrollStream() {
         animate={{ scale: [1, 1.18, 1], opacity: [0.18, 0.3, 0.18] }}
         transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY }}
       />
-    </section>
+    </motion.section>
   );
 }

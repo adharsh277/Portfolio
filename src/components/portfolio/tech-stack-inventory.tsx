@@ -1,4 +1,5 @@
 "use client";
+import Marquee from 'react-fast-marquee';
 
 type StackItem = {
   label: string;
@@ -57,7 +58,12 @@ function StackChip({ item }: { item: StackItem }) {
 }
 
 export function TechStackInventory() {
+  // Split stacks into 3 rows for marquee effect
   const allStacks = [...stackPrimary, ...stackSecondary];
+  const rowCount = 3;
+  const rows: StackItem[][] = Array.from({ length: rowCount }, (_, i) =>
+    allStacks.filter((_, idx) => idx % rowCount === i)
+  );
 
   return (
     <section className="relative mt-10 overflow-hidden py-3 sm:py-6">
@@ -69,9 +75,22 @@ export function TechStackInventory() {
         The Tech Stack
       </h3>
 
-      <div className="mt-6 grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] justify-center gap-5">
-        {allStacks.map((item) => (
-          <StackChip key={item.label} item={item} />
+      <div className="mt-8 flex flex-col gap-7">
+        {rows.map((row, i) => (
+          <Marquee
+            key={i}
+            direction={i % 2 === 0 ? 'left' : 'right'}
+            pauseOnHover
+            speed={30}
+            gradient={false}
+            className="w-full"
+          >
+            {row.map((item) => (
+              <div key={item.label} className="mx-8 inline-block">
+                <StackChip item={item} />
+              </div>
+            ))}
+          </Marquee>
         ))}
       </div>
     </section>

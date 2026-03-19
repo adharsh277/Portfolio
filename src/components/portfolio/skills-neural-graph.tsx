@@ -1,6 +1,7 @@
 "use client";
 
 import { skillGraph } from "@/data/portfolio-data";
+import { motion } from "framer-motion";
 
 const nodePositions: Record<string, { x: number; y: number }> = {
   Kubernetes: { x: 28, y: 35 },
@@ -23,7 +24,14 @@ const nodePositions: Record<string, { x: number; y: number }> = {
 
 export function SkillsNeuralGraph() {
   return (
-    <section id="my-skills" className="panel-glass p-5 sm:p-8">
+    <motion.section
+      id="my-skills"
+      className="panel-glass p-5 sm:p-8"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: "easeOut" }}
+    >
       <p className="text-xs uppercase tracking-[0.3em] text-[color:var(--text-dim)]">Neural Skill Graph</p>
       <div className="mt-5 h-[430px] overflow-hidden rounded-2xl border border-white/10 bg-black/35">
         <svg viewBox="0 0 100 100" className="h-full w-full">
@@ -31,7 +39,6 @@ export function SkillsNeuralGraph() {
             const source = nodePositions[from];
             const target = nodePositions[to];
             if (!source || !target) return null;
-
             return (
               <line
                 key={`${from}-${to}`}
@@ -39,8 +46,9 @@ export function SkillsNeuralGraph() {
                 y1={source.y}
                 x2={target.x}
                 y2={target.y}
-                stroke="rgba(247,75,162,0.4)"
-                strokeWidth="0.4"
+                stroke="#f3438f"
+                strokeWidth={0.7}
+                opacity={0.5}
               />
             );
           })}
@@ -54,6 +62,6 @@ export function SkillsNeuralGraph() {
           ))}
         </svg>
       </div>
-    </section>
+    </motion.section>
   );
 }
