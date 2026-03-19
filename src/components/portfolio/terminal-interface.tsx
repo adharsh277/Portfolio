@@ -11,6 +11,47 @@ const commandOutput: Record<string, string[]> = {
     "Aspiring AI Infrastructure Engineer",
     "Cloud • DevOps • Platform Engineering",
   ],
+  about: [
+    "Engineer passionate about building scalable AI/ML platforms, cloud-native systems, and developer experience.",
+    "Always learning. Always building."
+  ],
+  stack: [
+    "Languages: Python, TypeScript, Bash, SQL",
+    "Cloud: Azure, AWS, Oracle OCI",
+    "Infra: Kubernetes, Docker, Terraform, Ansible, Helm",
+    "CI/CD: GitHub Actions, Jenkins, Argo CD, Azure DevOps",
+    "Monitoring: Grafana, Prometheus, Loki, Falco"
+  ],
+  timeline: [
+    "Foundation Phase: Intern @ Infocreon Solutions, Jr. DevOps Engineer @ Infocreon, Nov 2025 - Present",
+    "Open Source Track: CNCF Contributor, Hackathon Finalist",
+    "Leadership Track: University Club Leadership"
+  ],
+  infra: [
+    "AI Platform: Kubernetes, CI/CD, Model Registry, Accelerated Compute, Data Pipelines, Monitoring, Security, Cost Telemetry, Experiment Tracking"
+  ],
+  incident: [
+    "Try the Incident Response Simulation panel for a real-world outage scenario!"
+  ],
+  quote: [
+    '"Simplicity is the soul of efficiency." – Austin Freeman',
+    '"The best way to predict the future is to invent it." – Alan Kay',
+    '"Automation is good, so long as you know exactly where to put the machine." – Eliyahu Goldratt',
+    '"Stay curious. Stay humble. Build things." – Adharsh Unnikrishnan'
+  ],
+  fun: [
+    "(\u256F\u00B0\u25A1\u00B0)\u256F\uFE35 \u253B\u2501\u253B  Here's some ASCII art!",
+    "Did you know? Kubernetes was named after the Greek word for 'helmsman' or 'pilot'."
+  ],
+  theme: [
+    "Theme toggled! (Try the UI toggle for a visual effect.)"
+  ],
+  sound: [
+    "Sound toggled! (Try the UI toggle for a real effect.)"
+  ],
+  blog: [
+    "Read my articles: https://medium.com/@adharshunni0007/activity"
+  ],
   skills: [
     "Cloud: Azure, AWS, Oracle OCI, Terraform, Ansible, Helm, Kubernetes",
     "CI/CD: Docker, Podman, GitHub Actions, Argo CD, Azure DevOps, Jenkins, Git",
@@ -18,7 +59,9 @@ const commandOutput: Record<string, string[]> = {
   ],
   projects: projects.map((project) => `- ${project.title}`),
   contact: [identity.email, identity.phone, identity.location],
-  help: ["Available commands: whoami, skills, projects, contact, clear"],
+  help: [
+    "Available commands: whoami, about, stack, timeline, infra, incident, quote, fun, theme, sound, blog, skills, projects, contact, clear"
+  ],
 };
 
 export function TerminalInterface() {

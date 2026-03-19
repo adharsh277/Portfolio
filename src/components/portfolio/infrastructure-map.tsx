@@ -13,11 +13,76 @@ type InfraNode = {
 };
 
 const nodes: InfraNode[] = [
-  { id: "k8s", label: "Kubernetes Cluster", x: 20, y: 48, details: ["Multi-zone pods", "Autoscaling policy", "Service mesh"] },
-  { id: "cicd", label: "CI/CD Pipelines", x: 38, y: 26, details: ["GitHub Actions", "Policy checks", "Canary gates"] },
-  { id: "aim", label: "AI Models", x: 62, y: 28, details: ["Model registry", "Inference mesh", "A/B rollout"] },
-  { id: "gpu", label: "GPU Compute", x: 78, y: 50, details: ["Distributed training", "CUDA jobs", "Cost telemetry"] },
-  { id: "data", label: "Data Pipelines", x: 46, y: 70, details: ["Ingestion orchestration", "Lakehouse sync", "Lineage tracking"] },
+  {
+    id: "orchestration",
+    label: "Orchestration Layer",
+    x: 18,
+    y: 48,
+    details: ["Kubernetes Cluster", "Service mesh", "Multi-zone pods", "Autoscaling"]
+  },
+  {
+    id: "cicd",
+    label: "CI/CD Pipelines",
+    x: 36,
+    y: 24,
+    details: ["Automation & Delivery", "Policy checks", "Canary gates", "GitHub Actions"]
+  },
+  {
+    id: "model",
+    label: "Model Registry & Serving",
+    x: 62,
+    y: 22,
+    details: ["Model lifecycle", "Model registry", "Inference endpoints", "A/B rollout"]
+  },
+  {
+    id: "compute",
+    label: "Accelerated Compute",
+    x: 80,
+    y: 48,
+    details: ["GPUs, TPUs, HPC nodes", "Distributed training", "CUDA jobs"]
+  },
+  {
+    id: "data",
+    label: "Data Pipelines",
+    x: 50,
+    y: 72,
+    details: ["ETL orchestration", "Feature stores", "Data lakes", "Lineage tracking"]
+  },
+  {
+    id: "monitoring",
+    label: "Monitoring & Observability",
+    x: 30,
+    y: 70,
+    details: ["Metrics", "Logs", "Traces", "Alerting"]
+  },
+  {
+    id: "cost",
+    label: "Cost & Resource Telemetry",
+    x: 70,
+    y: 70,
+    details: ["Usage tracking", "Optimization", "Cost analysis"]
+  },
+  {
+    id: "security",
+    label: "Security & Compliance",
+    x: 10,
+    y: 30,
+    details: ["Access control", "Audit logs", "Data privacy"]
+  },
+  {
+    id: "experiment",
+    label: "Experiment Tracking",
+    x: 90,
+    y: 30,
+    details: ["MLflow", "Weights & Biases", "Experiment metadata"]
+  },
+  {
+    id: "node",
+    label: "Node/Cluster Details",
+    x: 50,
+    y: 10,
+    details: ["Health", "Scaling", "Topology"]
+  },
 ];
 
 export function InfrastructureMap() {
@@ -34,8 +99,9 @@ export function InfrastructureMap() {
       transition={{ duration: 0.7, ease: 'easeOut' }}
     >
       <Card className="panel-glass p-5">
-        <p className="text-xs uppercase tracking-[0.24em] text-[color:var(--text-dim)]">AI Infrastructure Map</p>
-        <div className="relative mt-5 h-[360px] overflow-hidden rounded-xl border border-white/10">
+        <h2 className="text-base font-bold tracking-[0.24em] uppercase text-[color:var(--text-main)] mb-1">AI Platform & Infrastructure Expertise</h2>
+        <p className="text-xs tracking-[0.18em] text-[color:var(--text-dim)] mb-2">Key Systems & Skills Demonstrated Below</p>
+        <div className="relative mt-3 h-[360px] overflow-hidden rounded-xl border border-white/10">
           <svg viewBox="0 0 100 100" className="h-full w-full bg-black/30">
             {nodes.map((node) =>
               nodes.map((target) => {

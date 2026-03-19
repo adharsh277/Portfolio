@@ -20,6 +20,7 @@ import { SystemFooter } from "@/components/portfolio/system-footer";
 import { TerminalInterface } from "@/components/portfolio/terminal-interface";
 import { TestimonialsSection } from "@/components/portfolio/testimonials-section";
 import { ClusterBootSequence } from "@/components/portfolio/cluster-boot-sequence";
+import { IncidentSimulationPanel } from "@/components/portfolio/incident-simulation-panel";
 import {
   isSoundEnabled,
   playUiClick,
@@ -142,12 +143,12 @@ export function SystemInterface() {
             <IdentityPanel />
             <RecognizedSection />
             <InfrastructureMap />
-            <DevopsSimulationPanel />
+            <IncidentSimulationPanel />
             <ProjectSystems />
-            <SkillsNeuralGraph />
+            <ExperienceTimeline />
             <div className="grid gap-7 lg:grid-cols-2">
               <TerminalInterface />
-              <ExperienceTimeline />
+              <SkillsNeuralGraph />
             </div>
             <TestimonialsSection />
             <InfiniteScrollStream />
