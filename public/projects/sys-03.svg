@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" fill="#09060C"/>
+  <circle cx="220" cy="240" r="280" fill="#CB45F9" fill-opacity="0.2"/>
+  <circle cx="1320" cy="740" r="260" fill="#F3438F" fill-opacity="0.2"/>
+  <rect x="140" y="180" width="1320" height="540" rx="36" fill="#120D17" stroke="#ffffff" stroke-opacity="0.15"/>
+  <text x="200" y="310" fill="#F9ECFF" font-size="42" font-family="Arial, sans-serif" letter-spacing="4">SYS-03</text>
+  <text x="200" y="390" fill="#F9ECFF" font-size="56" font-family="Arial, sans-serif" font-weight="700">Prathidhwani Job Portal Platform</text>
+  <text x="200" y="470" fill="#C7ABC9" font-size="34" font-family="Arial, sans-serif">Next.js • Django REST • Cloud-Native Delivery</text>
+  <rect x="200" y="530" width="160" height="48" rx="12" fill="#F3438F" fill-opacity="0.22" stroke="#F3438F" stroke-opacity="0.7"/>
+  <text x="235" y="561" fill="#F9ECFF" font-size="20" font-family="Arial, sans-serif">SYS-03</text>
+</svg>

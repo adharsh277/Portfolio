@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <rect width="1600" height="900" fill="#08050D"/>
+  <circle cx="300" cy="740" r="300" fill="#F3438F" fill-opacity="0.18"/>
+  <circle cx="1220" cy="180" r="300" fill="#CB45F9" fill-opacity="0.22"/>
+  <rect x="140" y="180" width="1320" height="540" rx="36" fill="#130E18" stroke="#ffffff" stroke-opacity="0.15"/>
+  <text x="200" y="310" fill="#F9ECFF" font-size="42" font-family="Arial, sans-serif" letter-spacing="4">SYS-02</text>
+  <text x="200" y="390" fill="#F9ECFF" font-size="56" font-family="Arial, sans-serif" font-weight="700">Global ESG Intelligence Platform</text>
+  <text x="200" y="470" fill="#C7ABC9" font-size="34" font-family="Arial, sans-serif">Cloud Data Pipeline • AI Insights • BI Layer</text>
+  <rect x="200" y="530" width="160" height="48" rx="12" fill="#CB45F9" fill-opacity="0.24" stroke="#CB45F9" stroke-opacity="0.7"/>
+  <text x="235" y="561" fill="#F9ECFF" font-size="20" font-family="Arial, sans-serif">SYS-02</text>
+</svg>
