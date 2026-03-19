@@ -19,6 +19,7 @@ import { SkillsNeuralGraph } from "@/components/portfolio/skills-neural-graph";
 import { SystemFooter } from "@/components/portfolio/system-footer";
 import { TerminalInterface } from "@/components/portfolio/terminal-interface";
 import { TestimonialsSection } from "@/components/portfolio/testimonials-section";
+import { ClusterBootSequence } from "@/components/portfolio/cluster-boot-sequence";
 import {
   isSoundEnabled,
   playUiClick,
@@ -33,6 +34,7 @@ import {
 export function SystemInterface() {
   const [bootReady, setBootReady] = useState(false);
   const [entered, setEntered] = useState(false);
+  const [showClusterBoot, setShowClusterBoot] = useState(false);
   const [isDark, setIsDark] = useState(() => {
     if (typeof window === "undefined") return true;
     return window.localStorage.getItem("theme-mode") !== "light";
@@ -118,18 +120,21 @@ export function SystemInterface() {
             startCalmAmbience();
           }
           playUiClick();
-          setEntered(true);
+          setShowClusterBoot(true);
+          setTimeout(() => setEntered(true), 3400); // Wait for boot sequence
         }}
       />
 
       <AnimatePresence>
-        {!entered && (
+        {!entered && !showClusterBoot && (
           <motion.div key="core" initial={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.55 }}>
             <HeroCore />
           </motion.div>
         )}
       </AnimatePresence>
-
+      {showClusterBoot && !entered && (
+        <ClusterBootSequence onComplete={() => {}} />
+      )}
       {entered && (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
           <Navigation isDark={isDark} onThemeToggle={toggleTheme} soundEnabled={soundEnabled} onSoundToggle={toggleSound} />
