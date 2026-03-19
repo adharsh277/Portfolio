@@ -33,7 +33,7 @@ export function IdentityPanel() {
   return (
     <motion.section
       id="home"
-      className="panel-glass relative min-h-[88vh] overflow-hidden p-8 sm:p-12 mb-24"
+      className="relative min-h-[88vh] overflow-hidden p-8 sm:p-12 mb-24"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
