@@ -2,6 +2,7 @@
 
 import { Github, Linkedin, Twitter } from "lucide-react";
 import { identity, socialLinks } from "@/data/portfolio-data";
+import { motion } from "framer-motion";
 
 export function ContactSection() {
   const linkedIn = socialLinks.find((item) => item.label.toLowerCase().includes("linkedin"));
@@ -9,7 +10,14 @@ export function ContactSection() {
   const twitter = socialLinks.find((item) => item.label.toLowerCase() === "x" || item.label.toLowerCase().includes("twitter"));
 
   return (
-    <section id="let-s-connect" className="panel-neu p-6">
+    <motion.section
+      id="let-s-connect"
+      className="panel-neu p-6 mb-16"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.7, ease: 'easeOut' }}
+    >
       <p className="text-xs uppercase tracking-[0.28em] text-[color:var(--text-dim)]">{identity.badge}</p>
       <h3 className="mt-2 text-3xl font-semibold text-[color:var(--text-main)]">{identity.name}</h3>
       <p className="mt-1 text-sm text-[color:var(--text-dim)]">{identity.headline}</p>
@@ -69,6 +77,6 @@ export function ContactSection() {
           </a>
         )}
       </div>
-    </section>
+    </motion.section>
   );
 }
