@@ -30,12 +30,10 @@ const stackSecondary: StackItem[] = [
   { label: "Airflow", slug: "apacheairflow" },
   { label: "Python", slug: "python" },
   { label: "Azure", slug: "microsoftazure", iconPath: "/stack-logos/azure.svg" },
-  { label: "OCI", slug: "oracle", iconPath: "/stack-logos/oci.svg" },
   { label: "GCP", slug: "googlecloud" },
   { label: "Digital Ocean", slug: "digitalocean" },
   { label: "SAP Cloud", slug: "sap" },
   { label: "Trivy", slug: "trivy" },
-  { label: "Kubeflow", slug: "kubeflow", iconPath: "/stack-logos/kubeflow.svg" },
 ];
 
 function StackChip({ item }: { item: StackItem }) {
