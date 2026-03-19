@@ -15,15 +15,11 @@ type NavigationProps = {
 export function Navigation({ isDark, onThemeToggle, soundEnabled, onSoundToggle }: NavigationProps) {
   return (
     <motion.nav
-      className="sticky top-4 z-40 mx-auto mt-4 flex w-[min(96%,1300px)] items-center justify-between rounded-2xl border border-white/10 bg-black/30 px-5 py-3 backdrop-blur-xl"
+      className="sticky top-4 z-40 mx-auto mt-4 flex w-[min(96%,1300px)] items-center justify-end px-5 py-3"
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
     >
-      <div>
-        <p className="text-xs uppercase tracking-[0.34em] text-[color:var(--text-dim)]">Adharsh U</p>
-      </div>
-
       <div className="hidden items-center gap-5 lg:flex">
         {navItems.map((item) => (
           <a
@@ -37,7 +33,7 @@ export function Navigation({ isDark, onThemeToggle, soundEnabled, onSoundToggle 
         ))}
       </div>
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 ml-6">
         <button
           onClick={() => {
             playUiClick();
