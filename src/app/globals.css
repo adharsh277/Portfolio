@@ -200,6 +200,10 @@ html[data-theme="light"] {
     background-size: 240px 240px;
     animation: drift 26s linear infinite;
   }
+
+  .inventory-marquee-mask {
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
 }
 
 @keyframes drift {
