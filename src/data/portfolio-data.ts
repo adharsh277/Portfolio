@@ -1,6 +1,8 @@
 export type SystemProject = {
   id: string;
   title: string;
+  image?: string;
+  imageAlt?: string;
   tech: string[];
   metrics: string[];
   links: { label: string; href: string }[];
@@ -50,6 +52,8 @@ export const projects: SystemProject[] = [
     id: "sys-01",
     title:
       "Kubernetes-Based Microservices Platform with Blue-Green and Canary Deployments",
+    image: "/projects/sys-01.svg",
+    imageAlt: "Kubernetes microservices architecture preview",
     tech: [
       "Python",
       "FastAPI",
@@ -82,6 +86,8 @@ export const projects: SystemProject[] = [
   {
     id: "sys-02",
     title: "Global ESG Intelligence Platform: End-to-End Cloud and AI ESG Pipeline",
+    image: "/projects/sys-02.svg",
+    imageAlt: "Global ESG intelligence cloud pipeline preview",
     tech: [
       "Azure Data Lake",
       "Databricks",
@@ -113,6 +119,8 @@ export const projects: SystemProject[] = [
   {
     id: "sys-03",
     title: "Prathidhwani Job Portal - Cloud-Native Recruitment Platform",
+    image: "/projects/sys-03.svg",
+    imageAlt: "Prathidhwani cloud-native recruitment platform preview",
     tech: [
       "CI/CD",
       "GitHub Actions",
@@ -143,6 +151,8 @@ export const projects: SystemProject[] = [
   {
     id: "sys-04",
     title: "InfoCreon.com - Startup Website Hosting and Live Deployment",
+    image: "/projects/sys-04.svg",
+    imageAlt: "InfoCreon startup hosting platform preview",
     tech: [
       "Website Hosting",
       "Production Deployment",
