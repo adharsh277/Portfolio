@@ -14,18 +14,28 @@ const layers = [
 export function InfiniteScrollStream() {
   return (
     <motion.section
+      id="communication"
       className="relative overflow-hidden rounded-3xl border border-white/10 bg-transparent p-6 sm:p-10 mb-16 min-h-[520px] md:min-h-[600px]"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
       transition={{ duration: 0.7, ease: 'easeOut' }}
     >
-      <div className="pointer-events-none absolute inset-0 stars-layer" />
+      {/* Animated big planet at the bottom */}
       <motion.div
-        className="absolute -bottom-24 left-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-[radial-gradient(circle,var(--crimson),transparent_70%)] opacity-20"
-        animate={{ scale: [1, 1.18, 1], opacity: [0.18, 0.3, 0.18] }}
-        transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY }}
+        className="absolute -bottom-32 left-1/2 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,var(--crimson),transparent_70%)] opacity-25"
+        aria-hidden="true"
+        animate={{ scale: [1, 1.12, 1] }}
+        transition={{ duration: 5, repeat: Infinity, repeatType: 'reverse' }}
       />
+      {/* Minimal static stars */}
+      <div aria-hidden="true">
+        <span className="absolute left-12 top-16 w-1 h-1 rounded-full bg-white/60 opacity-70" />
+        <span className="absolute right-24 top-32 w-0.5 h-0.5 rounded-full bg-white/40 opacity-60" />
+        <span className="absolute left-1/2 top-10 w-0.5 h-0.5 rounded-full bg-white/50 opacity-50" />
+        <span className="absolute right-10 bottom-24 w-1 h-1 rounded-full bg-white/30 opacity-60" />
+        <span className="absolute left-24 bottom-10 w-0.5 h-0.5 rounded-full bg-white/40 opacity-50" />
+      </div>
       <div className="relative z-10 flex flex-col md:flex-row items-stretch justify-between gap-8 h-full">
         {/* Left: Communication & Form */}
         <div className="flex-1 flex flex-col justify-center gap-4">

@@ -1,3 +1,31 @@
+/* Subtle animated star/planet background for testimonials section */
+.stars-layer {
+  pointer-events: none;
+  z-index: 0;
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 60% 30%, #fff2 0%, #0000 70%),
+    radial-gradient(ellipse at 20% 80%, #fff1 0%, #0000 60%),
+    #0a0a1a;
+  overflow: hidden;
+}
+
+.stars-layer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-radial-gradient(circle at 10% 20%, #fff8 0 0.5px, transparent 0 20px),
+    repeating-radial-gradient(circle at 80% 70%, #fff6 0 0.7px, transparent 0 18px),
+    repeating-radial-gradient(circle at 50% 50%, #fff4 0 1px, transparent 0 22px);
+  opacity: 0.7;
+  animation: twinkle 6s linear infinite;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
 /* Recognized Logo Rotator Animation */
 .logo-rotator {
   display: flex;
