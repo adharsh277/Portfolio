@@ -27,7 +27,14 @@ export function InfiniteScrollStream() {
         aria-hidden="true"
         animate={{ scale: [1, 1.12, 1] }}
         transition={{ duration: 5, repeat: Infinity, repeatType: 'reverse' }}
-      />
+      >
+        {/* Orbiting orb (true circular motion) */}
+        <span className="absolute left-1/2 top-1/2 w-full h-full pointer-events-none" style={{ transform: 'translate(-50%, -50%)' }}>
+          <span className="absolute left-1/2 top-0 animate-orbit" style={{ transform: 'translateX(-50%)', transformOrigin: '50% 210px' }}>
+            <span className="block w-3 h-3 rounded-full bg-white/80 shadow-lg blur-[2px]" />
+          </span>
+        </span>
+      </motion.div>
       {/* Minimal static stars */}
       <div aria-hidden="true">
         <span className="absolute left-12 top-16 w-1 h-1 rounded-full bg-white/60 opacity-70" />

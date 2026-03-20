@@ -1,3 +1,15 @@
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animate-orbit {
+  animation: orbit 7s linear infinite;
+  transform-origin: 50% 210px;
+}
 /* Subtle animated star/planet background for testimonials section */
 .stars-layer {
   pointer-events: none;
