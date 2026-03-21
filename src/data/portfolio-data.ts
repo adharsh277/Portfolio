@@ -1,3 +1,9 @@
+export type Experience = {
+  title: string;
+  focus: string;
+  time: string;
+  details: string | string[];
+};
 export type SystemProject = {
   id: string;
   title: string;
@@ -182,31 +188,36 @@ export const projects: SystemProject[] = [
   },
 ];
 
-export const experiences = [
+export const experiences: Experience[] = [
   {
     title: "Intern - Infocreon Solutions Private Limited",
     focus: "Azure Data Factory, Databricks, Synapse, Power BI",
     time: "Foundation Phase",
+    details: "Worked on foundational data engineering tasks and learned core Azure services.",
   },
   {
     title: "Jr. DevOps Engineer - Infocreon Solution PVT LTD - Kochi",
     focus: "Docker, Linux, DigitalOcean, Nginx, CI/CD",
     time: "Nov 2025 - Present",
+    details: "Implemented CI/CD pipelines and managed cloud infrastructure.",
   },
   {
     title: "CNCF Open Source Contributor - Cloud and DevOps Projects",
     focus: "Falco, Helm, Flatcar, Kubernetes",
     time: "Open Source Track",
+    details: "Contributed to open source projects in the CNCF ecosystem.",
   },
   {
     title: "Hackathon Finalist - HackVerse by Linux Socials",
     focus: "Solidity, Web3, MySQL, MIT App Inventor",
     time: "Top 10 Finalist among 500+ participants",
+    details: "Developed a blockchain-based solution and reached the finals.",
   },
   {
     title: "University Club Leadership - Untangle Club",
     focus: "Teamwork, Communication, Event Coordination, Execution",
     time: "Leadership Track",
+    details: "Led university club activities and coordinated events.",
   },
 ];
 

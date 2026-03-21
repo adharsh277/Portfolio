@@ -30,6 +30,9 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${heading.variable} ${body.variable} h-full antialiased`}
     >
+        <head>
+          <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        </head>
       <body suppressHydrationWarning className="min-h-full flex flex-col">
         <TooltipProvider>{children}</TooltipProvider>
       </body>
