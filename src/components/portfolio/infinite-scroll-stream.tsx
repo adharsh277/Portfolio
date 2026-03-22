@@ -49,18 +49,30 @@ export function InfiniteScrollStream() {
           <h2 className="text-2xl font-bold text-white mb-2">Communication</h2>
           <h4 className="text-lg font-semibold text-white">Send a Message</h4>
           <p className="text-sm text-gray-300 mb-2">I'll get back to you within 24 hours.</p>
-          <form className="flex flex-col gap-3">
+          <form
+            className="flex flex-col gap-3"
+            onSubmit={e => {
+              e.preventDefault();
+              const form = e.currentTarget;
+              const name = form.name.value;
+              const email = form.email.value;
+              const message = form.message.value;
+              const subject = encodeURIComponent(`New message from ${name}`);
+              const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+              window.open(`mailto:adharshu777@gmail.com?subject=${subject}&body=${body}`);
+            }}
+          >
             <div>
               <label className="block text-xs text-gray-400 mb-1">Your Name</label>
-              <input className="w-full rounded-md px-3 py-2 bg-black/40 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-crimson" placeholder="John Doe" type="text" name="name" autoComplete="name" />
+              <input className="w-full rounded-md px-3 py-2 bg-black/40 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-crimson" placeholder="John Doe" type="text" name="name" autoComplete="name" required />
             </div>
             <div>
               <label className="block text-xs text-gray-400 mb-1">Your Email</label>
-              <input className="w-full rounded-md px-3 py-2 bg-black/40 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-crimson" placeholder="john@example.com" type="email" name="email" autoComplete="email" />
+              <input className="w-full rounded-md px-3 py-2 bg-black/40 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-crimson" placeholder="john@example.com" type="email" name="email" autoComplete="email" required />
             </div>
             <div>
               <label className="block text-xs text-gray-400 mb-1">Your Message</label>
-              <textarea className="w-full rounded-md px-3 py-2 bg-black/40 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-crimson" placeholder="Tell me about your project..." name="message" rows={4} />
+              <textarea className="w-full rounded-md px-3 py-2 bg-black/40 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-crimson" placeholder="Tell me about your project..." name="message" rows={4} required />
             </div>
             <button type="submit" className="mt-2 rounded-md bg-crimson px-4 py-2 text-white font-semibold hover:bg-pink-600 transition">Send Message</button>
           </form>
