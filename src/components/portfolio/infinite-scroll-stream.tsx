@@ -54,9 +54,10 @@ export function InfiniteScrollStream() {
             onSubmit={e => {
               e.preventDefault();
               const form = e.currentTarget;
-              const name = form.name.value;
-              const email = form.email.value;
-              const message = form.message.value;
+              const formData = new FormData(form);
+              const name = formData.get("name") as string;
+              const email = formData.get("email") as string;
+              const message = formData.get("message") as string;
               const subject = encodeURIComponent(`New message from ${name}`);
               const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
               window.open(`mailto:adharshu777@gmail.com?subject=${subject}&body=${body}`);
