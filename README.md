@@ -20,6 +20,10 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Live Demo
+
+[View the live portfolio site](https://adharsh-chi.vercel.app)
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -34,3 +38,13 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Contact Form Feature
+
+The portfolio includes a contact form ("Send a Message") that allows visitors to easily reach out. When a user fills in their name, email, and message, clicking the **Send Message** button will open their default email client (such as Gmail) with all details pre-filled, addressed to adharshu777@gmail.com. No backend is required—users can review and send the email directly from their own account.
+
+**How it works:**
+- Fill in your name, email, and message in the form.
+- Click **Send Message**.
+- Your email client (e.g., Gmail) will open a new draft to adharshu777@gmail.com with your details filled in.
+- Review and send the email directly.
