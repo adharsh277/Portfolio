@@ -47,7 +47,7 @@ export function TestimonialsSection() {
 
   return (
     <section className="py-12 mb-16 min-h-[420px] flex flex-col items-center justify-center">
-      <p className="text-xs uppercase tracking-[0.3em] text-[color:var(--text-dim)] mb-8">Industry Voices</p>
+      <p className="text-base uppercase tracking-[0.3em] text-[color:var(--text-dim)] mb-8">Industry Voices</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-4xl px-2">
         {testimonialsData.map((item, idx) => {
           const isActive = active === idx;
