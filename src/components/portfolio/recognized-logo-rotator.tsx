@@ -4,13 +4,13 @@ import { useEffect, useRef, useState } from "react";
 
 const LOGOS = [
   "aws",
-  "Github",
+  "github",
   "oracle",
   "docker",
   "kuberents",
   "ansible",
   "helm",
-  "Microsoft-Azure-Logo--Streamline-Logos (2)"
+  "microsoft-azure-logo--streamline-logos (2)"
 ];
 
 // Repeat logos to ensure enough for groups of 3
