@@ -1,0 +1,10 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#0A0810"/>
+  <path d="M0 610C180 480 340 710 530 590C730 470 790 280 1000 310C1090 322 1146 364 1200 420V720H0V610Z" fill="#F3438F" fill-opacity="0.2"/>
+  <path d="M0 520C200 390 340 620 530 500C740 368 900 182 1200 260V720H0V520Z" fill="#C84DF8" fill-opacity="0.18"/>
+  <rect x="95" y="102" width="1010" height="516" rx="30" fill="#100B16" fill-opacity="0.86" stroke="#FFFFFF" stroke-opacity="0.12"/>
+  <path d="M180 490H1020" stroke="#F9ECFF" stroke-opacity="0.3" stroke-width="2"/>
+  <path d="M180 540H690" stroke="#F9ECFF" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="180" y="295" fill="#F9ECFF" font-size="54" font-family="system-ui, sans-serif" font-weight="700">Observability Patterns</text>
+  <text x="180" y="352" fill="#D8BEDD" font-size="30" font-family="system-ui, sans-serif">Reduce incident noise and debug faster</text>
+</svg>

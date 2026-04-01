@@ -1,0 +1,17 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" fill="#08070C"/>
+  <rect x="0" y="0" width="1200" height="720" fill="url(#mesh)" fill-opacity="0.35"/>
+  <circle cx="1070" cy="120" r="240" fill="#F3438F" fill-opacity="0.24"/>
+  <circle cx="130" cy="650" r="300" fill="#C84DF8" fill-opacity="0.2"/>
+  <rect x="100" y="110" width="1000" height="500" rx="30" fill="#110C18" fill-opacity="0.84" stroke="#FFFFFF" stroke-opacity="0.12"/>
+  <path d="M190 500H1020" stroke="#F9ECFF" stroke-opacity="0.3" stroke-width="2"/>
+  <path d="M190 545H700" stroke="#F9ECFF" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="190" y="290" fill="#F9ECFF" font-size="56" font-family="system-ui, sans-serif" font-weight="700">Docker to Kubernetes</text>
+  <text x="190" y="350" fill="#D8BEDD" font-size="30" font-family="system-ui, sans-serif">A practical path for real DevOps teams</text>
+  <defs>
+    <radialGradient id="mesh" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(600 360) rotate(90) scale(520 760)">
+      <stop stop-color="#C84DF8" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#09070E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
