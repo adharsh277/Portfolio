@@ -16,6 +16,17 @@ export type SystemProject = {
   flow: string[];
 };
 
+export type BlogPost = {
+  id: string;
+  title: string;
+  summary: string;
+  image: string;
+  imageAlt: string;
+  href: string;
+  readTime: string;
+  published: string;
+};
+
 export const identity = {
   name: "Adharsh Unnikrishnan",
   headline: "Aspiring AI Infrastructure Engineer",
@@ -233,6 +244,42 @@ export const skillGraph = [
   ["Azure", "Data Engineering"],
   ["Argo CD", "GitOps"],
 ] as const;
+
+export const blogPosts: BlogPost[] = [
+  {
+    id: "blog-01",
+    title: "Building Reliable AI Infrastructure Pipelines",
+    summary:
+      "How to design cloud-native pipelines that keep AI workloads observable, scalable, and production-ready.",
+    image: "/projects/blog-01.svg",
+    imageAlt: "AI infrastructure blog cover",
+    href: "https://medium.com/@adharsh277",
+    readTime: "6 min read",
+    published: "Latest",
+  },
+  {
+    id: "blog-02",
+    title: "From Docker to Kubernetes: A Practical DevOps Path",
+    summary:
+      "A hands-on progression from local containers to resilient Kubernetes deployments with CI and rollback guardrails.",
+    image: "/projects/blog-02.svg",
+    imageAlt: "DevOps journey blog cover",
+    href: "https://medium.com/@adharsh277",
+    readTime: "7 min read",
+    published: "Latest",
+  },
+  {
+    id: "blog-03",
+    title: "Observability Patterns That Prevent Midnight Incidents",
+    summary:
+      "Signal-first monitoring patterns using metrics, logs, and traces to reduce alert noise and speed up incident response.",
+    image: "/projects/blog-03.svg",
+    imageAlt: "Observability blog cover",
+    href: "https://medium.com/@adharsh277",
+    readTime: "5 min read",
+    published: "Latest",
+  },
+];
 
 export const testimonials = [
   "Yash Singh - Senior DevOps Engineer @ Oracle",
