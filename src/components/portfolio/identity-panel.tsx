@@ -46,8 +46,8 @@ export function IdentityPanel() {
       </div>
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-10">
         <div className="flex-1 text-left">
-          <p className="text-lg font-bold tracking-[0.34em] text-[color:var(--crimson)] mb-2">WELCOME TO MY UNIVERSE</p>
-          <h1 className="text-5xl font-extrabold tracking-tight text-[color:var(--text-main)] mb-2">Crafting Digital<br />Masterpieces</h1>
+          <p className="text-lg font-bold tracking-[0.34em] text-[color:var(--crimson)] mb-2">CLOUD-NATIVE SYSTEMS</p>
+          <h1 className="text-5xl font-extrabold tracking-tight text-[color:var(--text-main)] mb-2">Designing Infrastructure<br />That Survives Production</h1>
           <p className="mt-2 max-w-2xl text-xl text-[color:var(--text-dim)] mb-4">
             I’m Adharsh U, a professional <span className="text-[color:var(--violet)] font-semibold">{role || identity.roles[0]}</span> focused on building resilient AI infra, distributed systems, and automation workflows.
           </p>
