@@ -14,6 +14,7 @@ import { InfiniteScrollStream } from "@/components/portfolio/infinite-scroll-str
 import { InfrastructureMap } from "@/components/portfolio/infrastructure-map";
 import { Navigation } from "@/components/portfolio/navigation";
 import { ProjectSystems } from "@/components/portfolio/project-systems";
+import { BlogsShowcase } from "@/components/portfolio/blogs-showcase";
 import { RecognizedSection } from "@/components/portfolio/recognized-section";
 import { SkillsNeuralGraph } from "@/components/portfolio/skills-neural-graph";
 import { SystemFooter } from "@/components/portfolio/system-footer";
@@ -150,6 +151,7 @@ export function SystemInterface() {
               <TerminalInterface />
               <SkillsNeuralGraph />
             </div>
+            <BlogsShowcase />
             <TestimonialsSection />
             <InfiniteScrollStream />
             <ContactSection />
