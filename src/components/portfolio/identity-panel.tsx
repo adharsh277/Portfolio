@@ -33,7 +33,7 @@ export function IdentityPanel() {
   return (
     <motion.section
       id="home"
-      className="relative min-h-[88vh] overflow-hidden p-8 sm:p-12 mb-24"
+      className="relative min-h-[78vh] overflow-hidden p-6 sm:p-8 mb-14"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
@@ -46,25 +46,25 @@ export function IdentityPanel() {
       </div>
       <div className="flex flex-col sm:flex-row items-center sm:items-start gap-10">
         <div className="flex-1 text-left">
-          <p className="text-lg font-bold tracking-[0.34em] text-[color:var(--crimson)] mb-2">CLOUD-NATIVE SYSTEMS</p>
-          <h1 className="text-5xl font-extrabold tracking-tight text-[color:var(--text-main)] mb-2">Designing Infrastructure<br />That Survives Production</h1>
-          <p className="mt-2 max-w-2xl text-xl text-[color:var(--text-dim)] mb-4">
+          <p className="text-base font-bold tracking-[0.3em] text-[color:var(--crimson)] mb-2">CLOUD-NATIVE SYSTEMS</p>
+          <h1 className="text-4xl font-extrabold tracking-tight text-[color:var(--text-main)] mb-2 sm:text-5xl">Designing Infrastructure<br />That Survives Production</h1>
+          <p className="mt-2 max-w-2xl text-lg text-[color:var(--text-dim)] mb-4">
             I’m Adharsh U, a professional <span className="text-[color:var(--violet)] font-semibold">{role || identity.roles[0]}</span> focused on building resilient AI infra, distributed systems, and automation workflows.
           </p>
           <div className="flex gap-4 mb-6">
-            <a href="https://www.linkedin.com/in/adharsh277/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn" className="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-white/20 bg-white/[0.05] text-[color:var(--text-main)] transition-all duration-200 hover:border-[rgba(243,67,143,0.6)] hover:bg-[rgba(243,67,143,0.14)]">
+            <a href="https://www.linkedin.com/in/adharsh277/" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="LinkedIn" className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/20 bg-white/[0.05] text-[color:var(--text-main)] transition-all duration-200 hover:border-[rgba(243,67,143,0.6)] hover:bg-[rgba(243,67,143,0.14)]">
               <Linkedin className="size-6" />
             </a>
-            <a href="https://github.com/adharsh277" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub" className="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-white/20 bg-white/[0.05] text-[color:var(--text-main)] transition-all duration-200 hover:border-[rgba(243,67,143,0.6)] hover:bg-[rgba(243,67,143,0.14)]">
+            <a href="https://github.com/adharsh277" target="_blank" rel="noreferrer" aria-label="GitHub" title="GitHub" className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/20 bg-white/[0.05] text-[color:var(--text-main)] transition-all duration-200 hover:border-[rgba(243,67,143,0.6)] hover:bg-[rgba(243,67,143,0.14)]">
               <Github className="size-6" />
             </a>
-            <a href="https://x.com/itsAdharsh" target="_blank" rel="noreferrer" aria-label="Twitter" title="Twitter" className="inline-flex h-12 w-12 items-center justify-center rounded-xl border border-white/20 bg-white/[0.05] text-[color:var(--text-main)] transition-all duration-200 hover:border-[rgba(243,67,143,0.6)] hover:bg-[rgba(243,67,143,0.14)]">
+            <a href="https://x.com/itsAdharsh" target="_blank" rel="noreferrer" aria-label="Twitter" title="Twitter" className="inline-flex h-10 w-10 items-center justify-center rounded-xl border border-white/20 bg-white/[0.05] text-[color:var(--text-main)] transition-all duration-200 hover:border-[rgba(243,67,143,0.6)] hover:bg-[rgba(243,67,143,0.14)]">
               <Twitter className="size-6" />
             </a>
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="#communication" className="inline-flex items-center rounded-xl border border-[rgba(243,67,143,0.58)] bg-[rgba(243,67,143,0.12)] px-6 py-3 text-base uppercase tracking-[0.2em] text-[color:var(--text-main)] transition-all duration-200 hover:bg-[rgba(243,67,143,0.22)] hover:shadow-[0_0_20px_rgba(243,67,143,0.24)]">Let's Collaborate</a>
-            <a href="/Adharsh%20U.pdf" download="Adharsh_U_Resume.pdf" className="inline-flex items-center rounded-xl border border-[rgba(243,67,143,0.58)] bg-[rgba(243,67,143,0.12)] px-6 py-3 text-base uppercase tracking-[0.2em] text-[color:var(--text-main)] transition-all duration-200 hover:bg-[rgba(243,67,143,0.22)] hover:shadow-[0_0_20px_rgba(243,67,143,0.24)]">Get Resume</a>
+            <a href="#communication" className="inline-flex items-center rounded-xl border border-[rgba(243,67,143,0.58)] bg-[rgba(243,67,143,0.12)] px-5 py-2.5 text-sm uppercase tracking-[0.2em] text-[color:var(--text-main)] transition-all duration-200 hover:bg-[rgba(243,67,143,0.22)] hover:shadow-[0_0_20px_rgba(243,67,143,0.24)]">Let's Collaborate</a>
+            <a href="/Adharsh%20U.pdf" download="Adharsh_U_Resume.pdf" className="inline-flex items-center rounded-xl border border-[rgba(243,67,143,0.58)] bg-[rgba(243,67,143,0.12)] px-5 py-2.5 text-sm uppercase tracking-[0.2em] text-[color:var(--text-main)] transition-all duration-200 hover:bg-[rgba(243,67,143,0.22)] hover:shadow-[0_0_20px_rgba(243,67,143,0.24)]">Get Resume</a>
           </div>
         </div>
       </div>
