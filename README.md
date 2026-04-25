@@ -1,50 +1,112 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Infrastructure Portfolio
 
-## Getting Started
+Production-style personal portfolio for Adharsh, focused on cloud, DevOps, platform engineering, certifications, and open-source contributions.
 
-First, run the development server:
+Live demo: [https://adharsh-chi.vercel.app](https://adharsh-chi.vercel.app)
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+
+## Local Development
+
+### 1. Install dependencies
+
+```bash
+npm install
+```
+
+### 2. Run development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Create production build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Live Demo
+## Main Sections in the Portfolio
 
-[View the live portfolio site](https://adharsh-chi.vercel.app)
+- Hero / Identity
+- Recognized and Certified by (logo rotator)
+- Credentials (Certifications + Open Source Contributions)
+- Selected Work
+- Experience Timeline
+- Skills
+- Blogs, testimonials, and contact
 
-## Learn More
+## Important Content Locations
 
-To learn more about Next.js, take a look at the following resources:
+- Main page composition: `src/components/portfolio/system-interface.tsx`
+- Identity/hero content: `src/components/portfolio/identity-panel.tsx`
+- Credentials + contribution cards: `src/components/portfolio/credentials-contributions.tsx`
+- Certifications and open-source data: `src/data/portfolio-data.ts`
+- Certification card artwork: `public/certifications/`
+- Recognition logos: `public/stack-logos/`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Resume Download Setup
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The **Get Resume** button is wired to:
 
-## Deploy on Vercel
+`/Adharsh%20U.pdf`
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+So place the resume file at:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+`public/Adharsh U.pdf`
 
-## Contact Form Feature
+You can rename the file, but then update the link in:
 
-The portfolio includes a contact form ("Send a Message") that allows visitors to easily reach out. When a user fills in their name, email, and message, clicking the **Send Message** button will open their default email client (such as Gmail) with all details pre-filled, addressed to adharshu777@gmail.com. No backend is required—users can review and send the email directly from their own account.
+`src/components/portfolio/identity-panel.tsx`
 
-**How it works:**
-- Fill in your name, email, and message in the form.
-- Click **Send Message**.
-- Your email client (e.g., Gmail) will open a new draft to adharshu777@gmail.com with your details filled in.
-- Review and send the email directly.
+## Certifications Section
+
+Certification cards are data-driven from `src/data/portfolio-data.ts`.
+
+Each certification item supports:
+
+- `title`
+- `issuer`
+- `date`
+- `badge`
+- `image`
+- `imageAlt`
+- `certificateUrl` (optional; used by **View Certificate** action)
+
+If `certificateUrl` is missing, the card falls back to opening the image.
+
+## Open Source Contributions Section
+
+Open-source cards are configured in `openSourceContributions` inside:
+
+`src/data/portfolio-data.ts`
+
+Each item uses:
+
+- `name`
+- `organization`
+- `href`
+- `summary`
+- `highlights`
+
+## Contact Form Behavior
+
+The contact form opens the visitor's email client with a prefilled draft addressed to:
+
+`adharshu777@gmail.com`
+
+No backend API is required for this behavior.
+
+## Deployment
+
+Recommended: Vercel.
+
+For other platforms, ensure Node version and Next.js build/start flow are supported.
