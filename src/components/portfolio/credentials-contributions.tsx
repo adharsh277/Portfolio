@@ -18,7 +18,7 @@ export function CredentialsContributions() {
       <div className="mb-6 sm:mb-8">
         <div>
           <p className="text-xs uppercase tracking-[0.34em] text-[color:var(--text-dim)]">Credentials</p>
-          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-[color:var(--text-main)] sm:text-4xl">Certifications and Open Source Proof</h2>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-[color:var(--text-main)] sm:text-4xl">Certifications and Open Source Contributions</h2>
           <p className="mt-2 max-w-2xl text-sm text-[color:var(--text-dim)]">
             A tighter view of the credentials I have earned and the public infrastructure work I have contributed to.
           </p>
