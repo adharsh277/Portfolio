@@ -9,7 +9,7 @@ export function CredentialsContributions() {
   return (
     <motion.section
       id="credentials"
-      className="panel-glass mb-16 overflow-hidden p-6 sm:p-8"
+      className="mb-16"
       initial={{ opacity: 0, y: 60 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.25 }}
