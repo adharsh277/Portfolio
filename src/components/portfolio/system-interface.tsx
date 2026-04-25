@@ -11,17 +11,16 @@ import { ExperienceTimeline } from "@/components/portfolio/experience-timeline";
 import { HeroCore } from "@/components/portfolio/hero-core";
 import { IdentityPanel } from "@/components/portfolio/identity-panel";
 import { InfiniteScrollStream } from "@/components/portfolio/infinite-scroll-stream";
-import { InfrastructureMap } from "@/components/portfolio/infrastructure-map";
 import { Navigation } from "@/components/portfolio/navigation";
 import { ProjectSystems } from "@/components/portfolio/project-systems";
 import { BlogsShowcase } from "@/components/portfolio/blogs-showcase";
+import { CredentialsContributions } from "@/components/portfolio/credentials-contributions";
 import { RecognizedSection } from "@/components/portfolio/recognized-section";
 import { SkillsNeuralGraph } from "@/components/portfolio/skills-neural-graph";
 import { SystemFooter } from "@/components/portfolio/system-footer";
 import { TerminalInterface } from "@/components/portfolio/terminal-interface";
 import { TestimonialsSection } from "@/components/portfolio/testimonials-section";
 import { ClusterBootSequence } from "@/components/portfolio/cluster-boot-sequence";
-import { IncidentSimulationPanel } from "@/components/portfolio/incident-simulation-panel";
 import {
   isSoundEnabled,
   playUiClick,
@@ -143,8 +142,7 @@ export function SystemInterface() {
           <main className="relative z-10 mx-auto mt-8 flex w-[min(94%,1300px)] flex-col gap-7 pb-14">
             <IdentityPanel />
             <RecognizedSection />
-            <InfrastructureMap />
-            <IncidentSimulationPanel />
+            <CredentialsContributions />
             <ProjectSystems />
             <ExperienceTimeline />
             <div className="grid gap-7 lg:grid-cols-2">
