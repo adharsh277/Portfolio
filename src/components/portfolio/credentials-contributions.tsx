@@ -59,9 +59,21 @@ export function CredentialsContributions() {
                   <div className="p-4">
                     <p className="text-[10px] uppercase tracking-[0.24em] text-[color:var(--text-dim)]">{cert.date}</p>
                     <h4 className="mt-2 text-sm font-semibold leading-snug text-[color:var(--text-main)]">{cert.title}</h4>
-                    <span className="mt-3 inline-flex rounded-full border border-[rgba(243,67,143,0.42)] bg-[rgba(243,67,143,0.12)] px-2.5 py-1 text-[10px] uppercase tracking-[0.18em] text-[color:var(--text-main)]">
-                      {cert.badge}
-                    </span>
+                    <div className="mt-3 flex items-center justify-between gap-3">
+                      <span className="inline-flex rounded-full border border-[rgba(243,67,143,0.42)] bg-[rgba(243,67,143,0.12)] px-2.5 py-1 text-[10px] uppercase tracking-[0.18em] text-[color:var(--text-main)]">
+                        {cert.badge}
+                      </span>
+                      <a
+                        href={cert.certificateUrl ?? cert.image}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`View certificate for ${cert.title}`}
+                        className="inline-flex items-center gap-1.5 rounded-lg border border-white/15 bg-white/[0.05] px-2.5 py-1 text-[10px] uppercase tracking-[0.14em] text-[color:var(--text-main)] transition hover:border-[rgba(243,67,143,0.5)] hover:bg-[rgba(243,67,143,0.12)]"
+                      >
+                        <ExternalLink className="h-3 w-3" />
+                        View Certificate
+                      </a>
+                    </div>
                   </div>
                 </motion.article>
               ))}
