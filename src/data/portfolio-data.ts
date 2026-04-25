@@ -93,6 +93,14 @@ export const certifications: CertificationCard[] = [
     imageAlt: "Microsoft Azure Developer Associate certification artwork",
   },
   {
+    title: "SAP Data Analyst",
+    issuer: "SAP",
+    date: "2025",
+    badge: "Data Analyst",
+    image: "/certifications/sap-data-analyst.svg",
+    imageAlt: "SAP Data Analyst certification artwork",
+  },
+  {
     title: "Oracle Cloud Infrastructure 2025 Certified DevOps Professional",
     issuer: "Oracle",
     date: "September 2025",
