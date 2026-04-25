@@ -1,5 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <rect width="64" height="64" rx="16" fill="#1A1320"/>
-  <path d="M30 12L15 42H26L30 33H45L51 52H40L35 40H23L30 12Z" fill="#F9ECFF"/>
-  <path d="M34 28L45 52H56L43 28H34Z" fill="#F3438F"/>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 70 70" id="Microsoft-Azure-Logo--Streamline-Logos" height="70" width="70">
+  <desc>
+    Microsoft Azure Logo Streamline Icon: https://streamlinehq.com
+  </desc>
+  <path fill="#000000" fill-rule="evenodd" d="M37.916666666666664 8.75 18.958333333333332 24.791666666666664 2.9166666666666665 52.5h14.583333333333332l20.416666666666664 -43.75Zm2.9166666666666665 4.375L32.08333333333333 35l14.583333333333332 17.5 -26.25 5.833333333333333h46.666666666666664L40.83333333333333 13.125Z" clip-rule="evenodd" stroke-width="2.9167"></path>
 </svg>
