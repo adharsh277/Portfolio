@@ -1,0 +1,45 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="90" x2="1080" y2="830" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#042338"/>
+      <stop offset="0.52" stop-color="#0A5C8A"/>
+      <stop offset="1" stop-color="#03111A"/>
+    </linearGradient>
+    <linearGradient id="teal" x1="290" y1="190" x2="900" y2="700" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9AF2FF"/>
+      <stop offset="1" stop-color="#25B6E6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" rx="60" fill="url(#bg)"/>
+  <circle cx="980" cy="170" r="170" fill="#25B6E6" fill-opacity="0.16"/>
+  <circle cx="190" cy="760" r="210" fill="#9AF2FF" fill-opacity="0.09"/>
+  <rect x="86" y="84" width="1028" height="732" rx="44" stroke="white" stroke-opacity="0.12"/>
+
+  <g transform="translate(96 104)">
+    <rect x="0" y="0" width="120" height="120" rx="30" fill="white" fill-opacity="0.08"/>
+    <path d="M24 42C24 32.0589 32.0589 24 42 24H98V96H42C32.0589 96 24 87.9411 24 78V42Z" fill="#00D3FF"/>
+    <path d="M98 24H102C111.941 24 120 32.0589 120 42V78C120 87.9411 111.941 96 102 96H98V24Z" fill="#008FD3"/>
+    <path d="M48 42H82C87.5228 42 92 46.4772 92 52V53C92 58.5228 87.5228 63 82 63H48V42Z" fill="white" fill-opacity="0.92"/>
+    <path d="M48 67H78C83.5228 67 88 71.4772 88 77V78C88 83.5228 83.5228 88 78 88H48V67Z" fill="white" fill-opacity="0.85"/>
+  </g>
+
+  <text x="260" y="165" fill="#BCEBFF" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="7">SAP</text>
+  <text x="260" y="230" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700">Data Analyst</text>
+  <text x="260" y="292" fill="#D8F4FF" font-family="Arial, Helvetica, sans-serif" font-size="30">Professional Track</text>
+
+  <rect x="260" y="350" width="220" height="52" rx="26" fill="url(#teal)" fill-opacity="0.18" stroke="#9AF2FF" stroke-opacity="0.55"/>
+  <text x="300" y="385" fill="#EFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="4">DATA ANALYTICS</text>
+
+  <g transform="translate(260 468)">
+    <rect x="0" y="24" width="248" height="122" rx="24" fill="#FFFFFF" fill-opacity="0.08"/>
+    <rect x="24" y="66" width="40" height="56" rx="10" fill="#25B6E6" fill-opacity="0.95"/>
+    <rect x="78" y="48" width="40" height="74" rx="10" fill="#5ED9F8" fill-opacity="0.88"/>
+    <rect x="132" y="32" width="40" height="90" rx="10" fill="#9AF2FF" fill-opacity="0.82"/>
+    <rect x="186" y="54" width="40" height="68" rx="10" fill="#64C8EA" fill-opacity="0.8"/>
+  </g>
+
+  <text x="820" y="560" fill="#D8F4FF" font-family="Arial, Helvetica, sans-serif" font-size="28" text-anchor="middle">Issued: 2025</text>
+  <text x="820" y="612" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" text-anchor="middle">SAP Certified</text>
+  <text x="820" y="654" fill="#BCEBFF" font-family="Arial, Helvetica, sans-serif" font-size="22" text-anchor="middle">Data analysis workflows, reporting, and insight-driven decisions</text>
+</svg>
