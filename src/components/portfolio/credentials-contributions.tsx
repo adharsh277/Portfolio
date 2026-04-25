@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, ShieldCheck, Sparkles } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { certifications, openSourceContributions } from "@/data/portfolio-data";
 
 export function CredentialsContributions() {
@@ -15,7 +15,7 @@ export function CredentialsContributions() {
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
     >
-      <div className="mb-6 flex flex-col gap-3 sm:mb-8 sm:flex-row sm:items-end sm:justify-between">
+      <div className="mb-6 sm:mb-8">
         <div>
           <p className="text-xs uppercase tracking-[0.34em] text-[color:var(--text-dim)]">Credentials</p>
           <h2 className="mt-2 text-3xl font-semibold tracking-tight text-[color:var(--text-main)] sm:text-4xl">Certifications and Open Source Proof</h2>
@@ -23,26 +23,13 @@ export function CredentialsContributions() {
             A tighter view of the credentials I have earned and the public infrastructure work I have contributed to.
           </p>
         </div>
-        <div className="flex flex-wrap gap-2">
-          <span className="system-chip inline-flex items-center gap-2">
-            <ShieldCheck className="h-4 w-4" /> Verified learning
-          </span>
-          <span className="system-chip inline-flex items-center gap-2">
-            <Sparkles className="h-4 w-4" /> Public contributions
-          </span>
-        </div>
       </div>
 
       <div className="space-y-8">
         <div className="rounded-[1.75rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.02))] p-4 sm:p-5">
-          <div className="mb-4 flex items-center justify-between gap-3">
-            <div>
-              <p className="text-xs uppercase tracking-[0.24em] text-[color:var(--text-dim)]">Certifications</p>
-              <h3 className="mt-1 text-xl font-semibold text-[color:var(--text-main)]">Company-backed credentials</h3>
-            </div>
-            <div className="hidden sm:flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-2 text-xs uppercase tracking-[0.2em] text-[color:var(--text-dim)]">
-              <ShieldCheck className="h-4 w-4" /> Four badges
-            </div>
+          <div className="mb-4">
+            <p className="text-xs uppercase tracking-[0.24em] text-[color:var(--text-dim)]">Certifications</p>
+            <h3 className="mt-1 text-xl font-semibold text-[color:var(--text-main)]">Company-backed credentials</h3>
           </div>
 
           <div className="-mx-1 overflow-x-auto pb-1">
@@ -83,14 +70,9 @@ export function CredentialsContributions() {
         </div>
 
         <div className="rounded-[1.75rem] border border-white/10 bg-[linear-gradient(180deg,rgba(243,67,143,0.08),rgba(255,255,255,0.02))] p-4 sm:p-5">
-          <div className="mb-4 flex items-center justify-between gap-3">
-            <div>
-              <p className="text-xs uppercase tracking-[0.24em] text-[color:var(--text-dim)]">Open Source Contribution</p>
-              <h3 className="mt-1 text-xl font-semibold text-[color:var(--text-main)]">Public infrastructure work</h3>
-            </div>
-            <div className="hidden sm:flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-3 py-2 text-xs uppercase tracking-[0.2em] text-[color:var(--text-dim)]">
-              <Github className="h-4 w-4" /> GitHub links
-            </div>
+          <div className="mb-4">
+            <p className="text-xs uppercase tracking-[0.24em] text-[color:var(--text-dim)]">Open Source Contribution</p>
+            <h3 className="mt-1 text-xl font-semibold text-[color:var(--text-main)]">Public infrastructure work</h3>
           </div>
 
           <div className="grid gap-4 lg:grid-cols-2">
