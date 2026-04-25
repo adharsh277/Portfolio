@@ -80,12 +80,12 @@ export function RecognizedLogoRotator() {
           justify-content: space-around;
           align-items: flex-start;
           width: 100%;
-          gap: 1rem;
+          gap: 1.35rem;
         }
         .logo-group {
           position: relative;
-          width: 126px;
-          height: 54px;
+          width: 100px;
+          height: 45px;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -112,7 +112,7 @@ export function RecognizedLogoRotator() {
           display: grid;
           place-items: center;
           width: 100%;
-          min-height: 54px;
+          min-height: 45px;
           border-radius: 10px;
           border: 1px solid rgba(255, 255, 255, 0.18);
           background: linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.06));
@@ -122,8 +122,8 @@ export function RecognizedLogoRotator() {
         .logo-image {
           width: 100%;
           height: auto;
-          max-width: 94px;
-          max-height: 30px;
+          max-width: 74px;
+          max-height: 25px;
           object-fit: contain;
           filter: contrast(1.1) saturate(1.06) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
         }
