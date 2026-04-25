@@ -64,7 +64,7 @@ export function IdentityPanel() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4">
             <a href="#communication" className="inline-flex items-center rounded-xl border border-[rgba(243,67,143,0.58)] bg-[rgba(243,67,143,0.12)] px-6 py-3 text-base uppercase tracking-[0.2em] text-[color:var(--text-main)] transition-all duration-200 hover:bg-[rgba(243,67,143,0.22)] hover:shadow-[0_0_20px_rgba(243,67,143,0.24)]">Let's Collaborate</a>
-            <a href="#resume" className="inline-flex items-center rounded-xl border border-[rgba(243,67,143,0.58)] bg-[rgba(243,67,143,0.12)] px-6 py-3 text-base uppercase tracking-[0.2em] text-[color:var(--text-main)] transition-all duration-200 hover:bg-[rgba(243,67,143,0.22)] hover:shadow-[0_0_20px_rgba(243,67,143,0.24)]">Get Resume</a>
+            <a href="/Adharsh%20U.pdf" download="Adharsh_U_Resume.pdf" className="inline-flex items-center rounded-xl border border-[rgba(243,67,143,0.58)] bg-[rgba(243,67,143,0.12)] px-6 py-3 text-base uppercase tracking-[0.2em] text-[color:var(--text-main)] transition-all duration-200 hover:bg-[rgba(243,67,143,0.22)] hover:shadow-[0_0_20px_rgba(243,67,143,0.24)]">Get Resume</a>
           </div>
         </div>
       </div>
