@@ -45,23 +45,92 @@ export const navItems = [
   "Home",
   "Selected Work",
   "Experience",
+  "Credentials",
   "My Skills",
   "Let's Connect",
 ];
 
-export const certifications = [
-  "Stripe",
-  "DataStax",
-  "Coca-Cola",
-  "General Motors",
-  "Shopify",
-  "GitLab",
-  "Duolingo",
-  "Mercado",
-  "Astrato",
-  "Agency Elevation",
-  "Coyote",
-  "Shares",
+export type CertificationCard = {
+  title: string;
+  issuer: string;
+  date: string;
+  badge: string;
+  image: string;
+  imageAlt: string;
+};
+
+export type OpenSourceContribution = {
+  name: string;
+  organization: string;
+  href: string;
+  summary: string;
+  highlights: string[];
+};
+
+export const certifications: CertificationCard[] = [
+  {
+    title: "Microsoft Azure Fundamentals (AZ-900)",
+    issuer: "Microsoft",
+    date: "October 2025",
+    badge: "Cloud Fundamentals",
+    image: "/certifications/azure-fundamentals.svg",
+    imageAlt: "Microsoft Azure Fundamentals certification artwork",
+  },
+  {
+    title: "IBM DevOps and Software Engineering Professional Certificate",
+    issuer: "IBM",
+    date: "September 2025",
+    badge: "Professional Certificate",
+    image: "/certifications/ibm-devops-professional.svg",
+    imageAlt: "IBM DevOps and Software Engineering certification artwork",
+  },
+  {
+    title: "Microsoft Azure Developer Associate (AZ-204)",
+    issuer: "Microsoft",
+    date: "November 2025",
+    badge: "Developer Associate",
+    image: "/certifications/azure-developer-associate.svg",
+    imageAlt: "Microsoft Azure Developer Associate certification artwork",
+  },
+  {
+    title: "Oracle Cloud Infrastructure 2025 Certified DevOps Professional",
+    issuer: "Oracle",
+    date: "September 2025",
+    badge: "DevOps Professional",
+    image: "/certifications/oci-devops-professional.svg",
+    imageAlt: "Oracle Cloud Infrastructure DevOps certification artwork",
+  },
+];
+
+export const openSourceContributions: OpenSourceContribution[] = [
+  {
+    name: "Flatcar",
+    organization: "Flatcar Linux",
+    href: "https://github.com/adharsh277/Flatcar",
+    summary: "Contribution work around lightweight, immutable Linux infrastructure for container hosts.",
+    highlights: ["Linux OS", "CNCF ecosystem", "Infrastructure hardening"],
+  },
+  {
+    name: "Falco",
+    organization: "CNCF Security",
+    href: "https://github.com/adharsh277/falco",
+    summary: "Security-focused contribution track for runtime threat detection and container visibility.",
+    highlights: ["Security", "Runtime detection", "Cloud-native"],
+  },
+  {
+    name: "Thanos",
+    organization: "Prometheus Scale-Out",
+    href: "https://github.com/adharsh277/thanos",
+    summary: "Work focused on scalable observability tooling and long-term metrics retention.",
+    highlights: ["Observability", "Prometheus", "Metrics storage"],
+  },
+  {
+    name: "Besu",
+    organization: "Hyperledger",
+    href: "https://github.com/adharsh277/besu",
+    summary: "Open-source blockchain infrastructure contribution track for Ethereum client workflows.",
+    highlights: ["Blockchain", "Client tooling", "Distributed systems"],
+  },
 ];
 
 export const projects: SystemProject[] = [
