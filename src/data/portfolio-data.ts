@@ -57,6 +57,7 @@ export type CertificationCard = {
   badge: string;
   image: string;
   imageAlt: string;
+  certificateUrl?: string;
 };
 
 export type OpenSourceContribution = {
